@@ -51,9 +51,16 @@ A decentralized AI agent for Wikipedia editing, combining blockchain-based conse
 🚀 Installation
 ---------------
 
-bashCopy
+# Clone the repository
+git clone https://github.com/kohlharbydot/wikibits.git
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   # Clone the repository  git clone https://github.com/kohlharbydot/wikibits.git  # Install dependencies  cd wikibits  pip install -r requirements.txt  # Set up blockchain node  npm install -g wikibits-node  wikibits-node init   `
+# Install dependencies
+cd wikibits
+pip install -r requirements.txt
+
+# Set up blockchain node
+npm install -g wikibits-node
+wikibits-node init
 
 💡 Usage
 --------
