@@ -15,7 +15,7 @@ var config = JSON.parse(fs.readFileSync(configPath));
 var app = module.exports = express.createServer();
 var requestCount = 0;
 
-// get the wikipedia shortnames sorted by their longname
+// get the wiki shortnames sorted by their longname
 
 var wikisSorted = [];
 for (var chan in wikichanges.wikipedias) wikisSorted.push(chan);
