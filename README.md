@@ -39,13 +39,9 @@ pip install -r requirements.txt
 # Set up blockchain node
 npm install -g wikibits-node
 wikibits-node init
+
 💡 Usage
 Basic Operations
-python
-
-Run
-
-Copy
 from wikibits import WikiAgent
 
 # Initialize agent
@@ -60,12 +56,9 @@ agent.edit_page(
 
 # Verify facts
 agent.verify_fact("Statement to verify")
+
+
 Governance Participation
-python
-
-Run
-
-Copy
 # Submit proposal
 agent.submit_proposal(
     proposal_type="POLICY_CHANGE",
@@ -75,20 +68,26 @@ agent.submit_proposal(
 
 # Vote on proposals
 agent.vote(proposal_id=123, vote="APPROVE")
+
+
 🏗 Architecture
 Components
+
 Core Layer
 Consensus mechanism
 Edit verification
 Storage management
+
 AI Layer
 NLP processing
 Fact verification
 Content quality assessment
+
 Blockchain Layer
 Smart contracts
 Token management
 Governance system
+
 🤝 Contributing
 We welcome contributions! Please see our Contributing Guidelines.
 
@@ -97,13 +96,10 @@ Create feature branch
 Commit changes
 Push to branch
 Open a Pull Request
+
+
 📖 Documentation
 API Reference
-python
-
-Run
-
-Copy
 # Edit Management
 agent.edit_page()        # Submit new edits
 agent.review_edit()      # Review pending edits
@@ -118,23 +114,10 @@ agent.check_reliability() # Verify source reliability
 agent.propose()          # Submit proposals
 agent.vote()            # Vote on changes
 agent.delegate()        # Delegate voting power
+
+
 🔐 Security
 Multi-signature verification
 Rate limiting
 Automated threat detection
 Regular security audits
-📊 Token Economics
-Edit rewards
-Staking mechanism
-Governance participation
-Quality multipliers
-🌐 Network Status
-Monitor network status at status.wikibits.org
-
-📜 License
-MIT
-
-🤝 Community
-Discord
-Forum
-Twitter
