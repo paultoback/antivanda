@@ -67,15 +67,32 @@ wikibits-node init
 
 ### Basic Operations
 
-pythonRunCopy
+from wikibits import WikiAgent
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   from wikibits import WikiAgent  # Initialize agent  agent = WikiAgent(wallet_address='your_address')  # Make an edit  agent.edit_page(      title="Article_Name",      content="New content",      sources=["url1", "url2"]  )  # Verify facts  agent.verify_fact("Statement to verify")   `
+# Initialize agent
+agent = WikiAgent(wallet_address='your_address')
+
+# Make an edit
+agent.edit_page(
+    title="Article_Name",
+    content="New content",
+    sources=["url1", "url2"]
+)
+
+# Verify facts
+agent.verify_fact("Statement to verify") `
 
 ### Governance Participation
 
-pythonRunCopy
+# Submit proposal
+agent.submit_proposal(
+    proposal_type="POLICY_CHANGE",
+    description="Proposal description",
+    voting_period=7  # days
+)
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   # Submit proposal  agent.submit_proposal(      proposal_type="POLICY_CHANGE",      description="Proposal description",      voting_period=7  # days  )  # Vote on proposals  agent.vote(proposal_id=123, vote="APPROVE")   `
+# Vote on proposals
+agent.vote(proposal_id=123, vote="APPROVE")
 
 🏗 Architecture
 ---------------
@@ -128,9 +145,20 @@ We welcome contributions! Please see our Contributing Guidelines.
 
 ### API Reference
 
-pythonRunCopy
+# Edit Management
+agent.edit_page()        # Submit new edits
+agent.review_edit()      # Review pending edits
+agent.rollback()         # Revert changes
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   # Edit Management  agent.edit_page()        # Submit new edits  agent.review_edit()      # Review pending edits  agent.rollback()         # Revert changes  # Fact Verification  agent.verify_fact()      # Check fact accuracy  agent.add_source()       # Add new sources  agent.check_reliability() # Verify source reliability  # Governance  agent.propose()          # Submit proposals  agent.vote()            # Vote on changes  agent.delegate()        # Delegate voting power   `
+# Fact Verification
+agent.verify_fact()      # Check fact accuracy
+agent.add_source()       # Add new sources
+agent.check_reliability() # Verify source reliability
+
+# Governance
+agent.propose()          # Submit proposals
+agent.vote()            # Vote on changes
+agent.delegate()        # Delegate voting power`
 
 🔐 Security
 -----------
