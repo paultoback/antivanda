@@ -1,66 +1,73 @@
-#!/usr/bin/env python
+# stream.py 
+import spacy
+import requests
+from bs4 import BeautifulSoup
+from transformers import pipeline
 
-"""
-In this module you'll find a function wikipedia_updates which takes a callback 
-function which will be passed wikipedia updates that stream from the socket.io
-server at http://wikistream.inkdroid.org 
+class WikiBitsProcessor:
+    def __init__(self):
+        self.nlp = spacy.load("en_core_web_sm")
+        self.fact_checker = pipeline("text-classification", 
+                                   model="facebook/bart-large-mnli")
 
-Each update will be passed to your callback function will be a Python dictionary 
-that looks something like: 
+    def fetch_article(self, url):
+        """Fetch Wikipedia article content"""
+        try:
+            response = requests.get(url)
+            soup = BeautifulSoup(response.text, 'html.parser')
+            content = soup.find(id="mw-content-text")
+            return content.get_text() if content else None
+        except Exception as e:
+            print(f"Error fetching article: {e}")
+            return None
 
-{
-  'anonymous': False,
-  'comment': '/* Anatomy */  changed statement that orbit was the eye to saying
-that the orbit was the eye socket for accuracy',
-  'delta': 7,
-  'flag': '',
-  'namespace': 'article',
-  'newPage': False,
-  'page': 'Optic nerve',
-  'pageUrl': 'http://en.wikipedia.org/wiki/Optic_nerve',
-  'robot': False,
-  'unpatrolled': False,
-  'url': 'http://en.wikipedia.org/w/index.php?diff=449570600&oldid=447889877',
-  'user': 'Moearly',
-  'userUrl': 'http://en.wikipedia.org/wiki/User:Moearly',
-  'wikipedia': '#en.wikipedia',
-  'wikipediaLong': 'English Wikipedia',
-  'wikipediaShort': 'en',
-  'wikipediaUrl': 'http://en.wikipedia.org'
-}
+    def analyze_content(self, text):
+        """Analyze article content for issues"""
+        doc = self.nlp(text)
+        
+        issues = []
+        
+        # Check for citation needs
+        sentences = [sent.text for sent in doc.sents]
+        for sent in sentences:
+            if self._needs_citation(sent):
+                issues.append(f"Citation needed: {sent[:100]}...")
 
-You'll need the requests (http://pypi.python.org/pypi/requests) library installed 
-for the HTTP requests.
+        # Check neutrality
+        neutrality_score = self._check_neutrality(text)
+        if neutrality_score < 0.7:
+            issues.append("Article may have neutrality issues")
 
-More about the protocol that socket.io uses can be found at:
-https://github.com/learnboost/socket.io-spec
-"""
+        return issues
 
-import re
-import json
-import time
+    def _needs_citation(self, sentence):
+        """Check if a sentence likely needs citation"""
+        doc = self.nlp(sentence)
+        claim_indicators = ["shows", "proves", "demonstrates", "indicates"]
+        return any(token.text.lower() in claim_indicators for token in doc)
 
-from requests import post, get
+    def _check_neutrality(self, text):
+        """Evaluate text neutrality"""
+        result = self.fact_checker(text, candidate_labels=["neutral", "biased"])
+        return result[0]["score"] if result[0]["label"] == "neutral" else 0.0
 
-def wikipedia_updates(callback):
-    endpoint = "http://wikistream.inkdroid.org/socket.io/1"
-    endpoint = "http://localhost:3000/socket.io/1"
-    session_id = post(endpoint).content.split(':')[0]
-    xhr_endpoint = "/".join((endpoint, "xhr-polling", session_id))
-
-    while True:
-        t = time.time() * 1000000
-        response = get(xhr_endpoint, params={'t': t}).content.decode('utf-8')
-
-        chunks = re.split(u'\ufffd[0-9]+\ufffd', response)
-        for chunk in chunks:
-            parts = chunk.split(':', 3)
-            if len(parts) == 4:
-                callback(json.loads(parts[3]))
-
+    def suggest_improvements(self, issues):
+        """Generate improvement suggestions based on issues"""
+        suggestions = []
+        for issue in issues:
+            if "Citation needed" in issue:
+                suggestions.append("Add reliable sources to support claims")
+            if "neutrality" in issue.lower():
+                suggestions.append("Rephrase content to maintain neutral point of view")
+        return suggestions
 
 if __name__ == "__main__":
-    def print_page(update): 
-        print update
-
-    wikipedia_updates(print_page)
+    processor = WikiBitsProcessor()
+    # Example usage
+    url = "https://en.wikipedia.org/wiki/Artificial_intelligence"
+    content = processor.fetch_article(url)
+    if content:
+        issues = processor.analyze_content(content)
+        suggestions = processor.suggest_improvements(issues)
+        print("Issues:", issues)
+        print("Suggestions:", suggestions)
