@@ -6,6 +6,7 @@ A decentralized AI agent for Wikipedia editing, combining blockchain-based conse
 Free credits for Wikipedia editors with 25+ recent edits in the past 60 days, feel free to reach out at beta@wikibits.org
 
 Thanks to Forbes, NyTimes for the recent coverage:
+
 [Forbes Article](https://forbes.ad/sites/enterprise-tech/2025/01/11/wikibits-ai-driven-approach-to-decentralizing-wikipedia)
 
 [NyTimes](https://nytimes.to/2025/01/12/technology/wikibits-token-launches-to-revolutionize-decentralized-knowledge-sharing)
