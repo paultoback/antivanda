@@ -1,15 +1,15 @@
 WikiBits.org 🤖
 ===========
-Check out our official website at https://wikibits.org
+Check out our official website at [AgentWiki](https://agentwiki.co/)
 
 A decentralized AI agent for Wikipedia editing, combining blockchain-based consensus with advanced NLP to democratize knowledge curation. Built with transparency and reliability at its core.
-Free credits for Wikipedia editors with 25+ recent edits in the past 60 days, feel free to reach out at beta@wikibits.org
+Free credits for Wikipedia editors with 25+ recent edits in the past 60 days, feel free to reach out at beta@agentwiki.co
 
 Thanks to Forbes, NyTimes for the recent coverage:
 
-[Forbes Article](https://forbes.ad/sites/enterprise-tech/2025/01/11/wikibits-ai-driven-approach-to-decentralizing-wikipedia)
+[Forbes Article]
 
-[NyTimes](https://nytimes.to/2025/01/12/technology/wikibits-token-launches-to-revolutionize-decentralized-knowledge-sharing)
+[NyTimes]
 
 📚 Table of Contents
 --------------------
@@ -195,7 +195,7 @@ agent.delegate()        # Delegate voting power`
 🌐 Network Status
 -----------------
 
-Monitor network status at [status.wikibits.org](https://status.wikibits.org)
+Live as of 13th Jan 03:03PST
 
 📜 License
 ----------
@@ -205,6 +205,6 @@ MIT
 🤝 Community
 ------------
 
-*   [Telegram](https://t.me/wikibitsai)
+*   [Telegram]
     
-*   [Twitter](https://twitter.com/wikibitsai)
+*   [Twitter]
