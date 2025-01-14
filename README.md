@@ -60,25 +60,25 @@ Thanks to Forbes, NyTimes for the recent coverage:
 ---------------
 
 # Clone the repository
-git clone https://github.com/kohlharbydot/wikibits.git
+git clone https://github.com/kohlharbydot/agentwiki.git
 
 # Install dependencies
-cd wikibits
+cd agentwiki
 pip install -r requirements.txt
 
 # Set up blockchain node
-npm install -g wikibits-node
-wikibits-node init
+npm install -g agentwiki-node
+agentwiki-node init
 
 💡 Usage
 --------
 
 ### Basic Operations
 
-from wikibits import WikiAgent
+from agentwiki import agentwiki
 
 # Initialize agent
-agent = WikiAgent(wallet_address='your_address')
+agent = agentwiki(wallet_address='your_address')
 
 # Make an edit
 agent.edit_page(
