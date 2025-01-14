@@ -7,7 +7,7 @@ Free credits for Wikipedia editors with 25+ recent edits in the past 60 days, fe
 
 Thanks to Forbes, NyTimes for the recent coverage:
 
-[Forbes Article] (https://forbes.ad/sites/enterprise-tech/2025/01/11/agentwiki-ai-driven-approach-to-decentralizing-wikipedia)
+[Forbes Article](https://forbes.ad/sites/enterprise-tech/2025/01/11/agentwiki-ai-driven-approach-to-decentralizing-wikipedia)
 
 
 📚 Table of Contents
