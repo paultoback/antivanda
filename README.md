@@ -1,4 +1,4 @@
-WikiBits.org 🤖
+AgentWiki.co 🤖
 ===========
 Check out our official website at [AgentWiki](https://agentwiki.co/)
 
@@ -205,6 +205,6 @@ MIT
 🤝 Community
 ------------
 
-*   [Telegram]
+*   [Telegram](https://t.me/agentwiki)
     
-*   [Twitter]
+*   [Twitter](https://x.com/agentwikiai)
