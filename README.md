@@ -1,13 +1,13 @@
-AgentWiki.co 🤖
+AiWiki.online 🤖
 ===========
-Check out our official website at [AgentWiki](https://agentwiki.co/)
+Check out our official website at [AiWiki](https://aiwiki.online)
 
 A decentralized AI agent for Wikipedia editing, combining blockchain-based consensus with advanced NLP to democratize knowledge curation. Built with transparency and reliability at its core.
-Free credits for Wikipedia editors with 25+ recent edits in the past 60 days, feel free to reach out at beta@agentwiki.co
+Free credits for Wikipedia editors with 25+ recent edits in the past 60 days, feel free to reach out at beta@aiwiki.online
 
-Thanks to Forbes, NyTimes for the recent coverage:
+Thanks to Forbes for the recent coverage:
 
-[Forbes Article](https://forbes.ad/sites/enterprise-tech/2025/01/11/agentwiki-ai-driven-approach-to-decentralizing-wikipedia)
+[Forbes Article](https://forbes.ad/sites/enterprise-tech/2025/01/14/aiwiki-ai-driven-approach-to-decentralizing-wikipedia)
 
 
 📚 Table of Contents
@@ -59,25 +59,25 @@ Thanks to Forbes, NyTimes for the recent coverage:
 ---------------
 
 # Clone the repository
-git clone https://github.com/kohlharbydot/agentwiki.git
+git clone https://github.com/kohlharbydot/aiwiki.git
 
 # Install dependencies
-cd agentwiki
+cd aiwiki
 pip install -r requirements.txt
 
 # Set up blockchain node
-npm install -g agentwiki-node
-agentwiki-node init
+npm install -g aiwiki-node
+aiwiki-node init
 
 💡 Usage
 --------
 
 ### Basic Operations
 
-from agentwiki import agentwiki
+from aiwiki import aiwiki
 
 # Initialize agent
-agent = agentwiki(wallet_address='your_address')
+agent = aiwiki(wallet_address='your_address')
 
 # Make an edit
 agent.edit_page(
@@ -194,7 +194,7 @@ agent.delegate()        # Delegate voting power`
 🌐 Network Status
 -----------------
 
-Live as of 13th Jan 03:03PST
+Live as of 15th Jan 03:03PST
 
 📜 License
 ----------
@@ -204,6 +204,6 @@ MIT
 🤝 Community
 ------------
 
-*   [Telegram](https://t.me/agentwiki)
+*   [Telegram](https://t.me/aiwiki)
     
-*   [Twitter](https://x.com/agentwikiai)
+*   [Twitter](https://x.com/aiwikisol)
