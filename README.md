@@ -204,6 +204,6 @@ MIT
 🤝 Community
 ------------
 
-*   [Telegram](https://t.me/aiwiki)
+*   [Telegram](https://t.me/aiwkisol)
     
 *   [Twitter](https://x.com/aiwikisol)
