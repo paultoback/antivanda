@@ -5,8 +5,8 @@ Recently raised $200k to democratize job hunting through AI-powered automation.
 ## 🎯 Mission
 Hunt Your Dream Job with AI-Powered Automation
 
-[[Active Users](https://img.shields.io/badge/Active%20Users-15k%2B-blue)]()
-[[Job Boards](https://img.shields.io/badge/Job%20Boards-20%2B-green)]()
+[Active Users](https://img.shields.io/badge/Active%20Users-15k%2B-blue)
+[Job Boards](https://img.shields.io/badge/Job%20Boards-20%2B-green)
 
 Join 15,000+ professionals using JobsHuntr to create tailored resumes and automatically apply to jobs across 20+ job boards.
 
@@ -69,7 +69,7 @@ Token Address: `pump`
 
 ## 🏆 Featured In
 
-[[Forbes](https://img.shields.io/badge/Featured%20in-Forbes-red)]()
+[Featured in Forbes](https://img.shields.io/badge/Featured%20in-Forbes-red)
 
 ## 🤝 Trusted By Teams At
 
