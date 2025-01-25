@@ -6,7 +6,7 @@ var fs = require('fs'),
     _ = require('underscore'),
     sio = require('socket.io'),
     express = require('express'),
-    wikichanges = require('wikichanges');
+    wikichanges = require('huntr');
 
 // get the configuration
 
@@ -15,13 +15,13 @@ var config = JSON.parse(fs.readFileSync(configPath));
 var app = module.exports = express.createServer();
 var requestCount = 0;
 
-// get the wiki shortnames sorted by their longname
+// get the jobs shortnames sorted by their longname
 
 var wikisSorted = [];
-for (var chan in wikichanges.wikipedias) wikisSorted.push(chan);
-wikisSorted.sort(function (a, b) {
-  w1 = wikichanges.wikipedias[a].long;
-  w2 = wikichanges.wikipedias[b].long;
+for (var chan in jobchanges.jobs) jobsSorted.push(chan);
+jobchanges.jobsfunction (a, b) {
+  w1 = jobchanges.jobs[a].long;
+  w2 = jobchanges.jobs[b].long;
   if (w1 == w2) return 0;
   else if (w1 < w2) return -1;
   else if (w1 > w2) return 1;
@@ -50,9 +50,9 @@ app.configure('production', function () {
 
 app.get('/', function (req, res){
   res.render('index', {
-    title: 'wikistream',
-    wikis: wikichanges.wikipedias,
-    wikisSorted: wikisSorted,
+    title: 'JobsChanges',
+    wikis: JobsChanges.JobsChanges,
+    wikisSorted: JobsSorted,
     stream: true
   });
 });
@@ -63,7 +63,7 @@ app.get('/commons-image/:page', function (req, res){
              "&prop=imageinfo&iiprop=url|size|comment|user&format=json";
   var opts = {
     headers: {'User-Agent': 'wikistream'},
-    host: 'commons.wikimedia.org',
+    host: 'commons.JobsChanges.org',
     path: path
   };
   http.get(opts, function (response) {
@@ -78,7 +78,7 @@ app.get('/commons-image/:page', function (req, res){
 
 app.get('/about/', function (req, res){
   res.render('about', {
-    title: 'about wikistream',
+    title: 'about JobsChanges',
     stream: false,
     trends: false
   });
@@ -90,7 +90,7 @@ app.listen(config.port);
 
 var io = sio.listen(app);
 
-var changes = new wikichanges.WikiChanges({ircNickname: config.ircNickname});
+var changes = new wikichanges.JobsChanges({ircNickname: config.ircNickname});
 changes.listen(function(message) {
   io.sockets.emit('message', message);
   io.set('log level', 0);
@@ -104,18 +104,16 @@ io.configure('production', function () {
 
 io.set('transports', config.transports);
 
-/* this is only really needed on inkdroid.org where wikistream was initially
+/* this is only really needed on inkdroid.org where it was initially
  * deployed to inkdroid.org:3000 and cited there, which resulted
- * in google using inkdroid.org:3000 as the canonical URL for wikistream
  * this bit of middleware will permanently redirect :3000 requests that 
- * bypass the proxy to wikistream.inkdroid.org. Hopefully Google will 
  * update their index :-)
  */
 
 function redirectOldPort(req, res, next) {
   if (req.header('host') == 'inkdroid.org:3000' 
           && ! req.header('x-forwarded-for')) {
-    res.redirect('http://wikistream.inkdroid.org' + req.url, 301);
+    res.redirect('http://jobstream.droid.org' + req.url, 301);
   } else {
     next();
   }
