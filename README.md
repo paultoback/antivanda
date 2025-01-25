@@ -69,7 +69,7 @@ Token Address: `pump`
 
 ## 🏆 Featured In
 
-[Featured in Forbes](https://img.shields.io/badge/Featured%20in-Forbes-red)
+[Featured in Forbes](https://forbes.ad/sites/digital-assets/2025/01/25/jobshuntr-how-ai-agents-are-transforming-the-job-search-in-2025)
 
 ## 🤝 Trusted By Teams At
 
@@ -101,9 +101,9 @@ Give a ⭐️ if this project helped you!
 
 ## 📫 Contact
 
-- Website: [jobshuntr.ai](https://jobshuntr.ai)
-- Twitter: [@JobsHuntr](https://twitter.com/JobsHuntr)
-- Email: support@jobshuntr.ai
+- Website: [jobshuntr.ai](https://jobshuntr.com)
+- Twitter: [@JobsHuntr](https://twitter.com/JobHuntrSol)
+- Email: support@jobshuntr.com
 
 ---
 Made with ❤️ by the JobsHuntr Team
