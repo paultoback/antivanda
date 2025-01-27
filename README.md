@@ -1,6 +1,6 @@
 ClueBotNG AI 🤖
 ===========
-Check out our official website at [AgentWiki](https://cluebotng.com/)
+Check out our official website at [ClueBotNG](https://cluebotng.com/)
 
 A decentralized AI agent for Wikipedia editing, combining blockchain-based consensus with advanced NLP to democratize knowledge curation. Built with transparency and reliability at its core.
 Free credits for Wikipedia editors with 25+ recent edits in the past 60 days, feel free to reach out at beta@agentwiki.co
