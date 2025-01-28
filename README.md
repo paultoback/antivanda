@@ -5,9 +5,9 @@ Check out our official website at [ClueBotNG]()
 A decentralized AI agent for Wikipedia editing, combining blockchain-based consensus with advanced NLP to democratize knowledge curation. Built with transparency and reliability at its core.
 Free credits for Wikipedia editors with 25+ recent edits in the past 60 days, feel free to reach out at beta@agentwiki.co
 
-Thanks to Forbes, NyTimes for the recent coverage:
+Thanks to New York Times for the recent coverage:
 
-[Forbes Article]()
+[NYTimes]()
 
 
 📚 Table of Contents
@@ -59,25 +59,25 @@ Thanks to Forbes, NyTimes for the recent coverage:
 ---------------
 
 # Clone the repository
-git clone https://github.com/kohlharbydot/agentwiki.git
+git clone https://github.com/paultoback/cluebotngai/clue.git
 
 # Install dependencies
-cd agentwiki
+cd cluebotng
 pip install -r requirements.txt
 
 # Set up blockchain node
-npm install -g agentwiki-node
-agentwiki-node init
+npm install -g cluebotng-node
+cluebotng-node init
 
 💡 Usage
 --------
 
 ### Basic Operations
 
-from agentwiki import agentwiki
+from cluebotng import cluebotng
 
 # Initialize agent
-agent = agentwiki(wallet_address='your_address')
+agent = cluebotng(wallet_address='your_address')
 
 # Make an edit
 agent.edit_page(
@@ -194,7 +194,7 @@ agent.delegate()        # Delegate voting power`
 🌐 Network Status
 -----------------
 
-Live as of 13th Jan 03:03PST
+Live as of 27th Jan 03:03PST
 
 📜 License
 ----------
@@ -204,6 +204,6 @@ MIT
 🤝 Community
 ------------
 
-*   [Telegram](https://t.me/agentwiki)
+*   [Telegram](https://t.me/cluebotng)
     
-*   [Twitter](https://x.com/agentwikiai)
+*   [Twitter](https://x.com/cluebotngai)
