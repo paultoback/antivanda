@@ -1,4 +1,4 @@
-ClueBotNG AI 🤖
+ClueBotNG AI
 ===========
 Check out our official website at [ClueBotNG](https://cluebotng.com)
 
