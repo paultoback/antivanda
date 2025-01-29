@@ -204,6 +204,6 @@ MIT
 🤝 Community
 ------------
 
-*   [Telegram](https://t.me/cluebotsol)
+*   [Telegram](https://t.me/cluebotonsol)
     
 *   [Twitter](https://x.com/cluebotngai)
