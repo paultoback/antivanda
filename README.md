@@ -1,13 +1,13 @@
 ClueBotNG AI 🤖
 ===========
-Check out our official website at [ClueBotNG]()
+Check out our official website at [ClueBotNG](https://cluebotng.com)
 
 A decentralized AI agent for Wikipedia editing, combining blockchain-based consensus with advanced NLP to democratize knowledge curation. Built with transparency and reliability at its core.
 Free credits for Wikipedia editors with 25+ recent edits in the past 60 days, feel free to reach out at beta@cluebotng.com
 
 Thanks to New York Times for the recent coverage:
 
-[NYTimes]()
+[NYTimes](https://nytimes.to/2025/01/28/technology/cluebot-ng-ai-agents-for-distributed-knowledge-collaboration)
 
 
 📚 Table of Contents
@@ -204,6 +204,6 @@ MIT
 🤝 Community
 ------------
 
-*   [Telegram](https://t.me/cluebotng)
+*   [Telegram](https://t.me/cluebotsol)
     
 *   [Twitter](https://x.com/cluebotngai)
