@@ -1,13 +1,13 @@
-ClueBotNG AI
+ClueNG AI
 ===========
-Check out our official website at [ClueBotNG](https://cluebotng.com)
+Check out our official website at [ClueNG](https://CluebotNG.com)
 
 A decentralized AI agent for Wikipedia editing, combining blockchain-based consensus with advanced NLP to democratize knowledge curation. Built with transparency and reliability at its core.
-Free credits for Wikipedia editors with 25+ recent edits in the past 60 days, feel free to reach out at beta@cluebotng.com
+Free credits for Wikipedia editors with 25+ recent edits in the past 60 days, feel free to reach out at beta@ClueNG.com
 
 Thanks to New York Times for the recent coverage:
 
-[NYTimes](https://nytimes.to/2025/01/28/technology/cluebot-ng-ai-agents-for-distributed-knowledge-collaboration)
+[NYTimes](https://nytimes.to/2025/02/04/technology/clue-ng-ai-agents-for-distributed-knowledge-collaboration)
 
 
 📚 Table of Contents
@@ -59,25 +59,25 @@ Thanks to New York Times for the recent coverage:
 ---------------
 
 # Clone the repository
-git clone https://github.com/paultoback/cluebotngai/clue.git
+git clone https://github.com/paultoback/ClueNGai/clue.git
 
 # Install dependencies
-cd cluebotng
+cd ClueNG
 pip install -r requirements.txt
 
 # Set up blockchain node
-npm install -g cluebotng-node
-cluebotng-node init
+npm install -g ClueNG-node
+ClueNG-node init
 
 💡 Usage
 --------
 
 ### Basic Operations
 
-from cluebotng import cluebotng
+from ClueNG import ClueNG
 
 # Initialize agent
-agent = cluebotng(wallet_address='your_address')
+agent = ClueNG(wallet_address='your_address')
 
 # Make an edit
 agent.edit_page(
@@ -194,7 +194,7 @@ agent.delegate()        # Delegate voting power`
 🌐 Network Status
 -----------------
 
-Live as of 29th Jan 03:05PST
+Live as of 4th Feb Jan 01:05PST
 
 📜 License
 ----------
@@ -203,7 +203,5 @@ MIT
 
 🤝 Community
 ------------
-
-*   [Telegram](https://t.me/cluebotonsol)
     
-*   [Twitter](https://x.com/cluebotngai)
+*   [Twitter](https://x.com/ClueNGLive)
