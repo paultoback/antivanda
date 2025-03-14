@@ -1,9 +1,9 @@
-ClueNG AI
+AntiVanda
 ===========
-Check out our official website at [ClueNG](https://CluebotNG.com)
+Check out our official website at [AntiVanda](https://antivanda.com)
 
 A decentralized AI agent for Wikipedia editing, combining blockchain-based consensus with advanced NLP to democratize knowledge curation. Built with transparency and reliability at its core.
-Free credits for Wikipedia editors with 25+ recent edits in the past 60 days, feel free to reach out at beta@ClueNG.com
+Free credits for Wikipedia editors with 25+ recent edits in the past 60 days, feel free to reach out at beta@antivanda.com
 
 Thanks to New York Times for the recent coverage:
 
@@ -59,25 +59,25 @@ Thanks to New York Times for the recent coverage:
 ---------------
 
 # Clone the repository
-git clone https://github.com/paultoback/ClueNGai/clue.git
+git clone https://github.com/paultoback/antivanda/clue.git
 
 # Install dependencies
-cd ClueNG
+cd AntiVanda
 pip install -r requirements.txt
 
 # Set up blockchain node
-npm install -g ClueNG-node
-ClueNG-node init
+npm install -g AntiVanda-node
+AntiVanda-node init
 
 💡 Usage
 --------
 
 ### Basic Operations
 
-from ClueNG import ClueNG
+from AntiVanda import AntiVanda
 
 # Initialize agent
-agent = ClueNG(wallet_address='your_address')
+agent = AntiVanda(wallet_address='your_address')
 
 # Make an edit
 agent.edit_page(
@@ -194,7 +194,7 @@ agent.delegate()        # Delegate voting power`
 🌐 Network Status
 -----------------
 
-Live as of 4th Feb Jan 01:05PST
+Live as of 14th Mar 01:05PST
 
 📜 License
 ----------
